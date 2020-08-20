@@ -1,0 +1,50 @@
+@import url(reset.css);
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,700;1,400&family=Roboto:wght@300&display=swap');
+
+/*
+font-family: 'Open Sans',
+sans-serif;
+font-family: 'Roboto',
+sans-serif;
+*/
+
+/* Layout */
+.container {
+  width: 1130px;
+  margin: 0 auto;
+}
+
+/* Typography */
+body {
+  font: normal 23px/24px 'Open Sans', sans-serif;
+  color: #2e2e2e;
+}
+
+.main_tt {
+  font: normal 55px/1 'Roboto', sans-serif;
+  color: #fff;
+  letter-spacing: 0.025em;
+}
+
+.content_tt {
+  font: normal 32px/1 'Roboto', sans-serif;
+  color: #2e2e2e;
+  letter-spacing: 0.025em;
+}
+
+.content_sub_tt {
+  font: normal 23px/1 'Roboto', sans-serif;
+  color: #f4af55;
+  letter-spacing: 0.024em;
+}
+
+a {
+  font-style: italic;
+  color: #f6604c;
+}
+
+/* header */
+/* content */
+/* footer */
+/* about */
+/* portfolio */

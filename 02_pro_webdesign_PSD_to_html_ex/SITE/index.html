@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Portfolio Theme</title>
+    <meta name="description" content="An HTML portfolio theme built" />
+    <meta name="keywords" content="portfolio, theme, bootstrap" />
+    <meta name="author" content="Alikerock" />
+	<meta name="viewport" content="width=divice-width, initial-scale=1" />
+	<link rel="stylesheet" href="css/styles.css" />
+	<script defer src="https://use.fontawesome.com/releases/v5.14.0/js/all.js"
+		integrity="sha384-3Nqiqht3ZZEO8FKj7GR1upiI385J92VwWNLj+FqHxtLYxd9l+WYpeqSOrLh0T12c"
+		crossorigin="anonymous"></script>
+
+		<!-- include jQuery & cycle2 -->
+		
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+		<script src="http://malsup.github.com/jquery.cycle2.js"></script>
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <h1 class="logo"><a href="#a">logo</a></h1>
+        <nav>
+          <ul>
+            <li><a href="#a">Home</a></li>
+            <li><a href="#a">Portfolio</a></li>
+            <li><a href="#a">About</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <div class="banner">
+      <ul class="banner_list cycle-slideshow" class="cycle-slideshow" 
+    data-cycle-fx="scrollHorz" 
+    data-cycle-timeout="0"
+	data-cycle-slides=".slide"
+	data-cycle-prev=".banner .prev"
+	data-cycle-next=".banner .next"
+	data-cycle-pager=".banner .pager">
+	
+	
+        <li class="slide1 slide">
+          <h2 class="fancy-box main_tt">Project title</h2>
+          <div class="slide_contents">
+            <p>This is a small description. Keep it simple and to the point.</p>
+            
+            <a href="#a" class="btn">See Details</a>
+          </div>
+        </li>
+        <li class="slide2 slide">
+          <h2 class="fancy-box main_tt">Project title</h2>
+          <div class="slide_contents">
+            <p>This is a small description. Keep it simple and to the point.</p>
+            
+            <a href="#a" class="btn">See Details</a>
+          </div>
+        </li>
+        <li class="slide3 slide">
+          <h2 class="fancy-box main_tt">Project title</h2>
+          <div class="slide_contents">
+            <p>This is a small description. Keep it simple and to the point.</p>
+            
+            <a href="#a" class="btn">See Details</a>
+          </div>
+        </li>
+	  </ul>
+	  <p class="controls">
+		  <a href="#a" class="prev"><i class="fas fa-chevron-left"></i></a>
+		  <a href="#a" class="next"><i class="fas fa-chevron-right"></i></a>
+	  </p>
+	  <p class="pager"></p>
+    </div>
+    <!-- //banner -->
+    <div class="main-content container">
+      <h3>Recent Projects</h3>
+      <p><a href="#a">See all projects →</a></p>
+      <ul>
+        <li>
+          <img src="images/portfolio-thumb-1.jpg" alt="portfolio thumb" />
+          <div class="thum_contents">
+            <h4>This is the project name</h4>
+            <a href="#a">CLICK FOR DETAILS</a>
+          </div>
+        </li>
+        <li>
+          <img src="images/portfolio-thumb-1.jpg" alt="" />
+          <div class="thum_contents">
+            <h4>This is the project name</h4>
+            <a href="#a">CLICK FOR DETAILS</a>
+          </div>
+        </li>
+        <li>
+          <img src="images/portfolio-thumb-2.jpg" alt="" />
+          <div class="thum_contents">
+            <h4>This is the project name</h4>
+            <a href="#a">CLICK FOR DETAILS</a>
+          </div>
+        </li>
+        <li>
+          <img src="images/portfolio-thumb-3.jpg" alt="" />
+          <div class="thum_contents">
+            <h4>This is the project name</h4>
+            <a href="#a">CLICK FOR DETAILS</a>
+          </div>
+        </li>
+        <li>
+          <img src="images/portfolio-thumb-4.jpg" alt="" />
+          <div class="thum_contents">
+            <h4>This is the project name</h4>
+            <a href="#a">CLICK FOR DETAILS</a>
+          </div>
+        </li>
+        <li>
+          <img src="images/portfolio-thumb-5.jpg" alt="" />
+          <div class="thum_contents">
+            <h4>This is the project name</h4>
+            <a href="#a">CLICK FOR DETAILS</a>
+          </div>
+        </li>
+        <li>
+          <img src="images/portfolio-thumb-6.jpg" alt="" />
+          <div class="thum_contents">
+            <h4>This is the project name</h4>
+            <a href="#a">CLICK FOR DETAILS</a>
+          </div>
+        </li>
+      </ul>
+    </div>
+    <!-- //main-content -->
+    <footer>
+		<i class="fas fa-envelope fancy-box"></i>
+		<div class="subscribe">
+      
+      <p>
+        Wanna see my latest photos? Enter your email below and I'll send you one
+        email a month with the latest updates.
+      </p>
+      <form action="#" method="post">
+        <input type="email" name="email" placeholder="Your email address" />
+        <!--
+			<button type="submit" class="btn">Subscribe</button>
+			<input type="submit" value="Subscribe" class="btn">
+
+			<button type="submit" class="btn"><img src="send.png" alt=""></button>
+			<input type="image" src="send.png" alt="" class="btn">
+			-->
+        <input type="submit" value="Subscribe" class="btn" />
+	  </form>
+	</div>
+	<p class="share">
+		<a href="#a"><i class="fab fa-twitter"></i></a>
+		<a href="#a"><i class="fab fa-facebook-f"></i></a>
+		<p class="copy">© 2020 kim yu jin</p>
+	</p>
+    </footer>
+  </body>
+</html>
