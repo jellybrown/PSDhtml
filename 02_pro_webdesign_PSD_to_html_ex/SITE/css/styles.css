@@ -1,5 +1,5 @@
 @import url(reset.css);
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,700;1,400&family=Roboto:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,700;1,400&family=Roboto:wght@300;@700&display=swap');
 
 /*
 font-family: 'Open Sans', sans-serif;
@@ -72,7 +72,12 @@ a:hover {
 .btn:hover {
   color: #fff;
   background-color: #f0ad64;
-  ;
+}
+
+hr {
+  border: none;
+  border-top: 1px solid #eaeaea;
+  margin: 27px 0;
 }
 
 /* HEADER */
@@ -371,5 +376,71 @@ footer .copy {
 
 }
 
-/* ABOUT */
+.page_banner {
+  height: 350px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+
+}
+
+.page_banner h2 {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 0;
+  margin-bottom: -27px;
+}
+
+.fancy-box.gray {
+  background: rgba(51, 53, 56, 0.9);
+  padding: 0 97px;
+}
+
+.main-content.subpage {
+  text-align: center;
+}
+
+
 /* PORTFOLIO */
+.page_banner.portfolio {
+  background-image: url(../images/banner-portfolio.png);
+}
+
+.subpage h3 {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 16px;
+  font-weight: bold;
+  letter-spacing: 0.1em;
+  color: #989898;
+  text-transform: uppercase;
+  margin-bottom: 22px;
+}
+
+.subpage .content_tt {
+  font-weight: bold;
+}
+
+.subpage p {
+  width: 780px;
+  margin: 0 auto;
+  line-height: 27px;
+}
+
+.subpage p.portfolio_nav {
+  width: 100%;
+  margin-bottom: 81px;
+}
+
+.portfolio_nav .prev_project {
+  float: left;
+}
+
+.portfolio_nav .next_project {
+  float: right;
+}
+
+/* ABOUT */
+.page_banner.about {
+  background-image: url(../images/banner-about.jpg);
+}
