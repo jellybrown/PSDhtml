@@ -1,0 +1,205 @@
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block;
+}
+
+body {
+    line-height: 1;
+}
+
+ol,
+ul {
+    list-style: none;
+}
+
+blockquote,
+q {
+    quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    content: '';
+    content: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+.clearfix:after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+img {
+    vertical-align: top;
+}
+
+/* TYPOGRAPHY */
+
+/*
+    font-family: "Montserrat", sans-serif;
+    font-family: "Raleway",sans-serif;
+*/
+
+
+* {
+    -webkit-font-smoothing: antialiased;
+}
+
+body {
+    font: 16px/28px "Montserrat", sans-serif;
+    color: #8c8c8c;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: "Raleway",
+        sans-serif;
+}
+
+.content_tt {
+    font-size: 30px;
+    font-weight: 600;
+    color: #555555;
+    text-align: center;
+
+}
+
+.content_desc {
+    font-weight: 300;
+    color: #8c8c8c;
+    width: 757px;
+    margin: 23px auto 33px;
+    text-align: center;
+}
+
+
+/* LAYOUT */
+.container {
+    width: 1170px;
+    margin: 0 auto;
+}
+
+/* COMMON ELEMONTS */
+.btn {
+    display: inline-block;
+    color: #fff;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 0 37px;
+    line-height: 53px;
+    background-color: #998675;
+    border-radius: 3px;
+    position: relative;
+    box-shadow: inset 0 -3px #736357;
+}
