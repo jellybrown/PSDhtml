@@ -510,3 +510,375 @@ header nav ul li a.active {
     font-weight: 400;
     color: #c7b299;
 }
+
+/* excellent_mobile */
+.excellent_mobile {
+    padding-top: 80px;
+}
+
+.excellent_mobile img {
+    float: left;
+}
+
+.excellent_mobile .contents {
+    float: right;
+    width: 657px;
+    padding-top: 115px;
+
+
+
+}
+
+.excellent_mobile .contents * {
+    text-align: left;
+}
+
+.excellent_mobile .contents p.content_desc {
+    font-weight: 400;
+}
+
+.excellent_mobile .contents ul li {
+
+    margin-left: 50px;
+    line-height: 32px;
+    font-weight: 400;
+}
+
+.excellent_mobile .contents ul li span {
+
+
+    background: url(../images/sprites.png) no-repeat;
+    width: 21px;
+    height: 21px;
+    display: inline-block;
+    background-position: -402px -89px;
+    margin-right: 30px;
+    text-indent: -9999em;
+    vertical-align: text-bottom;
+}
+
+/* counters */
+.counters {
+    padding: 68px 0 60px;
+    background: linear-gradient(to right, #211b19, #4e3427);
+    text-align: center;
+}
+
+
+.counters ul {
+    display: inline-block;
+}
+
+.counters ul li {
+    float: left;
+    margin: 0 37px;
+
+
+}
+
+.counters ul li .icon {
+    background: url(../images/sprites.png) no-repeat;
+    height: 46px;
+    display: inline-block;
+    text-indent: -9999em;
+}
+
+.counters ul li .icon.clients {
+    background-position: 0 0;
+    width: 47px;
+}
+
+.counters ul li .icon.coffee {
+    background-position: -195px 0;
+    width: 47px;
+}
+
+.counters ul li .icon.blog {
+    background-position: -397px 0;
+    width: 46px;
+}
+
+.counters ul li .icon.likes {
+    background-position: -599px 0;
+    width: 46px;
+}
+
+.counters ul li .icon.launched {
+    background-position: -793px 0;
+    width: 54px;
+}
+
+.counters ul li h3 {
+    font-family: "Montserrat",
+        sans-serif;
+    font-size: 48px;
+    color: #fff;
+    margin: 30px 0 18px;
+    font-weight: 300;
+}
+
+.counters ul li h4 {
+    font-family: "Montserrat",
+        sans-serif;
+    font-size: 14px;
+    color: #c7b299;
+    text-transform: uppercase;
+    font-weight: 300;
+}
+
+.counters ul li .line {
+    width: 30px;
+    height: 2px;
+    display: inline-block;
+    background-color: #fff;
+}
+
+/* recent_posts */
+.recent_posts {
+    padding: 81px 0 79px;
+    text-align: center;
+}
+
+.recent_posts ul {
+    display: inline-block;
+}
+
+.recent_posts ul li {
+
+    width: 370px;
+
+    text-align: left;
+
+
+
+
+}
+
+.recent_posts ul li * {
+    transition: 0.4s;
+}
+
+.recent_posts ul li .recent_imgwrap {
+    position: relative;
+}
+
+
+.recent_posts ul li .recent_imgwrap .date * {
+    text-align: center;
+    color: #fff;
+    position: absolute;
+    z-index: 200;
+}
+
+.recent_posts ul li .recent_imgwrap .date .day {
+
+    top: 20px;
+    left: 20px;
+    width: 50px;
+    height: 35px;
+    line-height: 35px;
+    background-color: #363636;
+    border-radius: 3px 3px 0 0;
+    font-size: 24px;
+
+}
+
+.recent_posts ul li .recent_imgwrap .date .month {
+    position: absolute;
+    top: 55px;
+    left: 20px;
+    width: 50px;
+    height: 20px;
+    line-height: 20px;
+    background-color: #252525;
+    border-radius: 0 0 3px 3px;
+    font-size: 12px;
+}
+
+
+.recent_posts ul li .contents {
+    padding: 30px 28px;
+    border-color: #f8f8f8;
+    border-style: solid;
+    border-width: 0 1px 1px 1px;
+
+}
+
+.recent_posts ul li .contents h4 {
+    color: #555555;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.recent_posts ul li .contents p {
+    color: #8c8c8c;
+    font-size: 14px;
+    line-height: 22px;
+    margin: 10px 0;
+}
+
+.recent_posts ul li .contents a {
+    text-decoration: none;
+    color: #c7b299;
+    font-size: 14px;
+    font-weight: 300;
+}
+
+.recent_posts ul li .contents a span {
+    padding-left: 10px;
+}
+
+.recent_posts ul li .recent_imgwrap .hover {
+    position: absolute;
+    width: 370px;
+    height: 220px;
+    background: rgba(17, 17, 17, 0.7);
+    top: 0;
+    opacity: 0;
+
+}
+
+.recent_posts ul li .recent_imgwrap .hover span {
+    position: absolute;
+    color: #fff;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 200;
+    font-size: 30px;
+}
+
+.recent_posts ul li:hover {
+    opacity: 1;
+}
+
+.recent_posts ul li:hover .hover {
+    opacity: 1;
+}
+
+.recent_posts ul li:hover .date .day {
+    background-color: #c7b299;
+}
+
+.recent_posts ul li:hover .date .month {
+    background-color: #a48d72;
+}
+
+.recent_posts ul li:hover .contents {
+    background-color: #362f2d;
+    border-color: transparent;
+}
+
+.recent_posts ul li:hover .contents h4 {
+    color: #c7b299;
+}
+
+.recent_posts ul li:hover .contents p {
+    color: #fff;
+}
+
+.recent_posts .controls {
+    text-align: center;
+    margin-top: 40px;
+}
+
+.recent_posts .controls a {
+    background: url(../images/sprites.png) no-repeat;
+    width: 22px;
+    height: 22px;
+    display: inline-block;
+    text-indent: -9999em;
+}
+
+.recent_posts .controls a.bx-prev {
+    background-position: -194px -89px;
+}
+
+.recent_posts .controls a.bx-next {
+    background-position: -224px -89px;
+}
+
+.recent_posts .controls a.bx-prev:hover {
+    background-position: -194px -111px;
+}
+
+.recent_posts .controls a.bx-next:hover {
+    background-position: -224px -111px;
+}
+
+/* partners */
+
+.partners {
+    padding: 136px 0 140px;
+    background: url(../images/partners_bg.jpg) no-repeat center center;
+    text-align: center;
+}
+
+
+.partners ul {
+    display: inline-block;
+
+}
+
+.partners ul li {
+    float: left;
+    margin: 0 40px;
+    line-height: 210px;
+}
+
+.partners ul li a {
+    display: block;
+}
+
+.partners ul li a img {
+    vertical-align: middle;
+}
+
+/* footer_top */
+.footer_top {
+    padding: 80px 0;
+    background: #191919;
+
+}
+
+.footer_top .container {}
+
+.footer_top .footer_content {
+    float: left;
+    width: 270px;
+
+
+}
+
+.footer_top .logo {
+    background: url(../images/footer_logo.png) no-repeat;
+    text-indent: -9999em;
+    width: 181px;
+    height: 56px;
+    display: block;
+}
+
+.footer_top .title_f {
+    font-size: 24px;
+    font-weight: 700;
+    color: #fff;
+    margin-bottom: 20px;
+}
+
+.footer_top .content_f {
+    color: #555555;
+    font-size: 14px;
+    line-height: 24px;
+    font-weight: 300;
+    width: 270px;
+}
+
+.footer_top li .date_f {
+    font-size: 12px;
+
+    color: #363636;
+}
+
+.footer_top .dribble li {
+    display: inline-block;
+}
