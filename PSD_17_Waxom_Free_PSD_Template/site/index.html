@@ -43,8 +43,8 @@
                 slideWidth: 370,
                 slideMargin: 30,
                 pager: false,
-                nextSelector: '.controls .next',
-                prevSelector: '.controls .prev'
+                nextSelector: '.recent_posts .controls .next',
+                prevSelector: '.recent_posts .controls .prev'
             });
         });
     </script>
@@ -67,11 +67,13 @@
                     <li><a href="#a">Shortcodes</a></li>
                     <li><a href="#a">Contact</a></li>
                 </ul>
-                <ul>
+                <ul class="top_icons">
                     <li><a href="#a"><i class="fas fa-shopping-bag"></i></a></li>
                     <li><a href="#a"><i class="fas fa-search"></i></a></li>
                 </ul>
+                <span class="toggle"><i class="fas fa-bars"></i></span>
             </nav>
+
         </div>
     </header>
     <div class="slider">
@@ -352,7 +354,7 @@
                         <div class="contents">
                             <h4>Lorem ipsum dolor sit amet</h4>
                             <p>Claritas est etiam processus dynamicus, qui sequitur mutationem consuetudium.</p>
-                            <a href="#a">Read More<span><i class="fas fa-caret-right"></i></span></a>
+                            <a href="#a" class="read_more">Read More<span><i class="fas fa-caret-right"></i></span></a>
                         </div>
                     </li>
                     <li>
@@ -370,7 +372,7 @@
                         <div class="contents">
                             <h4>Lorem ipsum dolor sit amet</h4>
                             <p>Claritas est etiam processus dynamicus, qui sequitur mutationem consuetudium.</p>
-                            <a href="#a">Read More<span><i class="fas fa-caret-right"></i></span></a>
+                            <a href="#a" class="read_more">Read More<span><i class="fas fa-caret-right"></i></span></a>
                         </div>
                     </li>
                     <li>
@@ -388,7 +390,7 @@
                         <div class="contents">
                             <h4>Lorem ipsum dolor sit amet</h4>
                             <p>Claritas est etiam processus dynamicus, qui sequitur mutationem consuetudium.</p>
-                            <a href="#a">Read More<span><i class="fas fa-caret-right"></i></span></a>
+                            <a href="#a" class="read_more">Read More<span><i class="fas fa-caret-right"></i></span></a>
                         </div>
                     </li>
                     <li>
@@ -406,7 +408,7 @@
                         <div class="contents">
                             <h4>Lorem ipsum dolor sit amet</h4>
                             <p>Claritas est etiam processus dynamicus, qui sequitur mutationem consuetudium.</p>
-                            <a href="#a">Read More<span><i class="fas fa-caret-right"></i></span></a>
+                            <a href="#a" class="read_more">Read More<span><i class="fas fa-caret-right"></i></span></a>
                         </div>
                     </li>
                     <li>
@@ -424,7 +426,7 @@
                         <div class="contents">
                             <h4>Lorem ipsum dolor sit amet</h4>
                             <p>Claritas est etiam processus dynamicus, qui sequitur mutationem consuetudium.</p>
-                            <a href="#a">Read More<span><i class="fas fa-caret-right"></i></span></a>
+                            <a href="#a" class="read_more">Read More<span><i class="fas fa-caret-right"></i></span></a>
                         </div>
                     </li>
                     <li>
@@ -442,7 +444,7 @@
                         <div class="contents">
                             <h4>Lorem ipsum dolor sit amet</h4>
                             <p>Claritas est etiam processus dynamicus, qui sequitur mutationem consuetudium.</p>
-                            <a href="#a">Read More<span><i class="fas fa-caret-right"></i></span></a>
+                            <a href="#a" class="read_more">Read More<span><i class="fas fa-caret-right"></i></span></a>
                         </div>
                     </li>
                 </ul>
@@ -466,17 +468,17 @@
     <footer>
         <div class="footer_top">
             <div class="container clearfix">
-                <div class="footer_content">
+                <div class="footer_content first">
                     <h3 class="logo">waxom logo</h3>
                     <p class="content_f">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh
                         euismod tincidunt ut laoreet dolore
                         magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci suscipit lobortis
                         claritatem.</p>
-                    <a href="#a">Read More<span><i class="fas fa-caret-right"></i></span></a>
+                    <a href="#a" class="read_more">Read More<span><i class="fas fa-caret-right"></i></span></a>
                 </div>
                 <div class="footer_content">
                     <h4 class="title_f">Recent Posts</h4>
-                    <ul>
+                    <ul class="footer_list">
                         <li>
                             <span class="date_f">September 08, 2015</span>
                             <p class="content_f">Lorem ipsum dolor sit amet, consectetuer adipiscing elit</p>
@@ -493,14 +495,16 @@
                 </div>
                 <div class="footer_content">
                     <h4 class="title_f">Our Twitter</h4>
-                    <ul>
+                    <ul class="footer_list">
                         <li>
-                            <p class="content_f">@waxom Cum soluta nobis eleifend option congue nihil imperdiet doming
+                            <p class="content_f"><span class="twit_id">@waxom</span> Cum soluta nobis eleifend option
+                                congue nihil imperdiet doming
                             </p>
                             <span class="date_f">3 mins ago</span>
                         </li>
                         <li>
-                            <p class="content_f">@waxom Cum soluta nobis eleifend option congue nihil imperdiet doming
+                            <p class="content_f"><span class="twit_id">@waxom</span> Cum soluta nobis eleifend option
+                                congue nihil imperdiet doming
                             </p>
                             <span class="date_f">3 mins ago</span>
                         </li>
@@ -523,7 +527,18 @@
             </div>
         </div>
         <div class="footer_bottom">
-            <div class="container"></div>
+            <div class="container clearfix">
+                <ul>
+                    <li><a href="#a">Copyright &copy; 2018 <span>Waxom</span></a></li>
+                    <li><a href="#a">Privacy Policy</a></li>
+                    <li><a href="#a" class="faq">FAQ</a></li>
+                    <li><a href="#a">Support</a></li>
+                </ul>
+                <div>
+                    <p>Designed by <span>ThemeFire</span></p>
+                    <p>Only on <span>Envato Market</span></p>
+                </div>
+            </div>
         </div>
 
     </footer>
