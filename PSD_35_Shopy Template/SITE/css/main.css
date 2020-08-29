@@ -7,6 +7,7 @@ body {
     margin: 0;
     width: 100%;
     height: 100%;
+    background-color: #f4f6f8;
 }
 
 h1,
@@ -15,7 +16,8 @@ h3,
 h4,
 h5,
 h6,
-ul {
+ul,
+p {
     font-size: 100%;
     font-weight: normal;
     line-height: 1;
@@ -37,17 +39,13 @@ img {
 
 /* COMMON ELEMONTS - TYPHOGRAPHY */
 
-/*
-font-family: 'Open Sans',
-sans-serif;
-*/
 body {
     font-family: 'Open Sans',
         sans-serif;
     font-size: 16px;
     color: #495662;
     line-height: 1;
-
+    34404b
 }
 
 a {
@@ -69,7 +67,25 @@ a {
 }
 
 .jumbotron p {
-    margin-bottom: 46px;
+    margin: 13px 0 60px;
+}
+
+.content_title {
+    font-size: 36px;
+    font-weight: 800;
+    color: #34404b;
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.content_title span {
+    color: #ff5912;
+}
+
+.content_desc {
+    text-align: center;
+    margin-bottom: 82px;
 }
 
 /* COMMON ELEMONTS - LINK, BUTTON, IMAGE, TITLES, SHADOW */
@@ -336,4 +352,157 @@ header form input[type="submit"] {
 .bx-pager-item a.active {
     height: 36px;
     background: #ff5912;
+}
+
+/* NEW ARRIVALS */
+.new_arrivals_list>li {
+    height: 365px;
+}
+
+.new_arrivals_list li .defalut img {
+    width: 60%;
+    height: auto;
+    transition: 0.5s;
+}
+
+.new_arrivals_list>li .list_contents {
+    background: #fff;
+    text-align: center;
+    overflow: hidden;
+    height: 365px;
+    transition: 0.5s;
+}
+
+.new_arrivals_list li:hover .list_contents {
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.new_arrivals_list li:hover .defalut {
+    padding: 30px 0 0 0;
+}
+
+.new_arrivals_list li:hover .defalut img {
+    width: 25%;
+    height: auto;
+}
+
+.new_arrivals_list li:hover .defalut h3 {
+    color: #ff5912;
+}
+
+.new_arrivals_list li:hover .defalut h4 {
+    display: none;
+}
+
+.new_arrivals_list li:hover .hover {
+    padding: 0 0 30px 0;
+}
+
+
+.new_arrivals_list .list_contents .defalut {
+    padding: 30px 0;
+}
+
+.new_arrivals_list li .defalut img {
+    transition: 0.5s;
+}
+
+.new_arrivals_list .list_contents .defalut h3 {
+    font-size: 18px;
+    font-weight: 600;
+    color: #34404b;
+    margin: 30px 0;
+    transition: 0.5s;
+
+}
+
+.new_arrivals_list .list_contents .defalut h4 {
+    font-size: 18px;
+    font-weight: 600;
+    color: #ff5912;
+
+}
+
+.new_arrivals_list .list_contents .hover {
+    padding: 30px 0;
+
+
+}
+
+.new_arrivals_list .list_contents .hover p {
+    margin-bottom: 30px;
+    font-size: 14px;
+    color: #34404b;
+}
+
+.new_arrivals_list .list_contents .hover .color span {
+    width: 14px;
+    height: 14px;
+    display: inline-block;
+    border-radius: 50%;
+
+    text-indent: -9999em;
+}
+
+.new_arrivals_list .list_contents .hover .color span.Crimson {
+    background-color: Crimson;
+}
+
+.new_arrivals_list .list_contents .hover .color span.DarkBlue {
+    background-color: DarkBlue;
+}
+
+.new_arrivals_list .list_contents .hover .color span.DeepSkyBlue {
+    background-color: DeepSkyBlue;
+}
+
+.new_arrivals_list .list_contents .hover .color span.LimeGreen {
+    background-color: LimeGreen;
+}
+
+.new_arrivals_list .list_contents .hover hr {
+    width: 170px;
+    height: 1px;
+    border: none;
+    border-bottom: 1px solid #f2f4f7;
+    margin-bottom: 30px;
+}
+
+.new_arrivals_list .list_contents .hover ul {
+    display: flex;
+    justify-content: center;
+}
+
+.new_arrivals_list .list_contents .hover ul li {
+    margin: 0 15px;
+}
+
+.share {
+    width: 19px;
+    height: 19px;
+    background-position: -150px 0;
+}
+
+.addcart {
+    width: 22px;
+    height: 19px;
+    background-position: -180px 0;
+}
+
+.wishlist {
+    width: 19px;
+    height: 16px;
+    background-position: -210px 0;
+}
+
+.share:hover {
+    background-position: -150px -30px;
+}
+
+.addcart:hover {
+    background-position: -180px -30px;
+}
+
+.wishlist:hover {
+    background-position: -210px -30px;
 }
