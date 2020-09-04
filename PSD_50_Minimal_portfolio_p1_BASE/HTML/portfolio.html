@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Minimal Porfoli</title>
+    <title>portfolio - Minimal Porfolio</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
         integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
     <link rel="stylesheet" href="css/common.css">
@@ -13,12 +13,12 @@
     <script defer src="https://use.fontawesome.com/releases/v5.14.0/js/all.js"
         integrity="sha384-3Nqiqht3ZZEO8FKj7GR1upiI385J92VwWNLj+FqHxtLYxd9l+WYpeqSOrLh0T12c" crossorigin="anonymous">
     </script>
-
+    <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js"></script>
     <script src="js/common.js"></script>
 </head>
 
 <body>
-    <header>
+    <header class="sub-portfolio">
         <h1 class="logo"><a href="#a">logo</a></h1>
         <nav>
             <ul>
@@ -28,28 +28,20 @@
                 <li><a href="#a">Contact</a></li>
             </ul>
         </nav>
+        <hr>
+        <div class="portfolio-filters">
+            <button data-filter="*" class="secondary btn">All</button>
+            <button data-filter=".print" class="secondary btn">Print</button>
+            <button data-filter=".website" class="secondary btn">Website</button>
+            <button data-filter=".mobile" class="secondary btn">Mobile</button>
+        </div>
+
     </header>
     <main>
         <div class="container">
-            <ul class="latest portfolio row">
-                <li class="col-md-4">
-                    <div class="contents shadow">
-                        <h2 class="heading">I'm yujin</h2>
-                    </div>
-                </li>
-                <li class="col-md-4">
-                    <div class="contents shadow">
-                        <h2 class="heading">I create super
-                            awesome stuff</h2>
-                    </div>
-                </li>
-                <li class="col-md-4">
-                    <div class="contents shadow">
-                        <h2 class="heading">I’m available for
-                            freelance projects</h2>
-                    </div>
-                </li>
-                <li class="col-md-4">
+            <ul class="portfolio row">
+
+                <li class="col-md-4 item print">
                     <div class="contents shadow">
                         <img src="images/portfolio_01.png" alt="portfolio image">
                         <div class="hover_contents">
@@ -61,7 +53,7 @@
                         </div>
                     </div>
                 </li>
-                <li class="col-md-4">
+                <li class="col-md-4 item website">
                     <div class="contents shadow">
                         <img src="images/portfolio_01.png" alt="portfolio image">
                         <div class="hover_contents">
@@ -73,7 +65,7 @@
                         </div>
                     </div>
                 </li>
-                <li class="col-md-4">
+                <li class="col-md-4 item mobile">
                     <div class="contents shadow">
                         <img src="images/portfolio_01.png" alt="portfolio image">
                         <div class="hover_contents">
@@ -85,7 +77,7 @@
                         </div>
                     </div>
                 </li>
-                <li class="col-md-4">
+                <li class="col-md-4 item mobile">
                     <div class="contents shadow">
                         <img src="images/portfolio_01.png" alt="portfolio image">
                         <div class="hover_contents">
@@ -97,7 +89,7 @@
                         </div>
                     </div>
                 </li>
-                <li class="col-md-4">
+                <li class="col-md-4 item website">
                     <div class="contents shadow">
                         <img src="images/portfolio_01.png" alt="portfolio image">
                         <div class="hover_contents">
@@ -109,7 +101,7 @@
                         </div>
                     </div>
                 </li>
-                <li class="col-md-4">
+                <li class="col-md-4 item print">
                     <div class="contents shadow">
                         <img src="images/portfolio_01.png" alt="portfolio image">
                         <div class="hover_contents">
@@ -122,8 +114,10 @@
                     </div>
                 </li>
             </ul>
-            <p class="portfolio_link">
-                <a href="#a" class="primary btn">See my full portfolio</a>
+            <p class="portfolio_nav shadow">
+                <a href="#a" class="secondary btn">previous page</a>
+                <a href="#a" class="secondary btn">next page</a>
+
             </p>
 
         </div>
@@ -142,24 +136,21 @@
         </div>
         <div class="copyright">
             <h3 class="heading6">Just wanna say hi?</h3>
-            <p>
-                You can call me, email me directly or connect with me through my social networks.
+            <p>You can call me, email me directly or connect with me through my social networks.
             </p>
-            <p>
-                (+40) 744122222<br />
-                <a href="mailto:hello@adipurdila.com"> hello@adipurdila.com</a>
+            <p>(+40) 744122222<br /><a href="mailto:hello@adipurdila.com"></a> hello@adipurdila.com
             </p>
-
             <ul class="social_link">
                 <li><a href="#a"><i class="fab fa-twitter"></i></a></li>
                 <li><a href="#a"><i class="fab fa-facebook-f"></i></a></li>
                 <li><a href="#a"><i class="fab fa-instagram"></i></a></li>
-
+                <li><a href="#a"></a></li>
             </ul>
-            <hr />
+            </hr>
             <p class="copyright_text">
                 (c) Copyright 2013. Portfolio theme by Adi Purdila.
             </p>
+
 
 
 
