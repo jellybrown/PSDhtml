@@ -11,7 +11,7 @@ $(function () {
 
 
 
-    const $grid = $('.latest_portfolio').isotope({
+    const $grid = $('.filter').isotope({
         // options
         itemSelector: '.item',
         layoutMode: 'fitRows'
