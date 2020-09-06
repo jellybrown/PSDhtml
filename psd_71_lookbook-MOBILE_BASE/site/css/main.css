@@ -1,2 +1,179 @@
 @import url('reset.css');
 @import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700');
+
+/* ----------- TYPOGRAPHY ----------- */
+body {
+    font-size: 14px;
+    font-family: 'Open Sans',
+        sans-serif;
+    color: #2a2e33;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* ----------- LAYOUT ----------- */
+body {
+    background: #d6d8e1;
+}
+
+main {
+    padding: 16px;
+}
+
+
+/* ----------- ASIDE(NAV) ----------- */
+aside {
+    display: none;
+}
+
+
+/* ----------- NEWS FEED ----------- */
+.main-header {
+    position: relative;
+}
+
+.main-header .header-inner {
+    height: 44px;
+    background: linear-gradient(to bottom, #d35a43, #dd5e46);
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
+    color: #fff;
+    z-index: 3;
+    position: relative;
+
+}
+
+.main-header .header-inner i {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+i.toggle {
+    left: 16px;
+}
+
+i.search {
+    right: 16px;
+}
+
+.main-header .header-inner h1 {
+    line-height: 44px;
+    text-align: center;
+}
+
+
+.main-header form {
+    background: rgba(0, 0, 0, 0.8);
+    display: flex;
+    justify-content: space-between;
+    padding: 8px;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: -80px;
+    transition: 0.5s;
+    z-index: 2;
+}
+
+.main-header form.on {
+    top: 44px;
+}
+
+.main-header form>label {
+    display: none;
+}
+
+.main-header form>input {
+    width: 100%;
+    margin-right: 5px;
+    height: 15px;
+}
+
+.main-header form>button {
+    border: none;
+    background: none;
+    color: #fff;
+    font-size: 15px;
+}
+
+
+.products li {
+    background: #fff;
+    border-radius: 3px;
+    overflow: hidden;
+    box-shadow: 0 1px 2px rgba(1, 1, 1, 0.22);
+    margin-bottom: 8px;
+}
+
+.products li .panel-header {
+    background: #3f539c;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    padding: 8px;
+}
+
+.panel-header img {
+    margin-right: 5px;
+}
+
+.panel-header h2 {
+    font-size: 16px;
+    margin-bottom: 6px;
+}
+
+.panel-header h3 {
+    font-size: 12px;
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.panel-content {
+    line-height: 20px;
+    padding: 8px;
+
+}
+
+.products li .panel-footer {
+    background: #f1f2f7;
+    padding: 8px;
+
+}
+
+.panel-footer a {
+    font-size: 10px;
+    color: #3f539c;
+}
+
+.panel-footer form {}
+
+.panel-footer form input {
+    display: none;
+}
+
+.panel-footer form label {}
+
+.panel-footer form label {
+    position: relative;
+}
+
+.panel-footer form label i.fa-heart-o {}
+
+.panel-footer form label i.fa-heart {
+
+    position: absolute;
+    left: 0;
+    opacity: 0;
+    transition: 0.5s;
+}
+
+.panel-footer form input:checked~lable .fa-heart {
+    opacity: 1;
+}
+
+/* ----------- PROFILE ----------- */
+
+/* ----------- LIST & CARD VIEW ----------- */
+
+/* ----------- PRODUCT PAGE ----------- */

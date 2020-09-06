@@ -1,25 +1,231 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-<head>
-<meta charset="utf-8">
-<title>lookbook</title>
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="description" content="lookbook shopping mall">
-<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
-<link href="css/main.css" rel="stylesheet" >
-<script src="http://code.jquery.com/jquery-1.12.4.min.js"></script>
-<script src="http://code.jquery.com/ui/1.12.1/jquery-ui.min.js"></script>
-<script src="js/main.js"></script>
-</head>
-<body>
-	
-</body>
+  <head>
+    <meta charset="utf-8" />
+    <title>lookbook</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="lookbook shopping mall" />
+    <link
+      href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+      rel="stylesheet"
+      integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN"
+      crossorigin="anonymous"
+    />
+    <link href="css/main.css" rel="stylesheet" />
+    <script src="http://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="http://code.jquery.com/ui/1.12.1/jquery-ui.min.js"></script>
+    <script src="js/retina.min.js"></script>
+    <script src="js/main.js"></script>
+  </head>
+  <body>
+    <aside class="sidemenu">
+      <div class="header">
+        <img
+          src="images/chuck_profile.png"
+          data-at2x="images/chuck_profile@2x.png"
+          alt="profile image"
+        />
+        <h1>My Profile</h1>
+      </div>
+      <section class="content">
+        <h2 class="hidden">aside menu</h2>
+        <ul>
+          <li>
+            <a href="#a"><i class="fa fa-home"></i> News Feed</a>
+          </li>
+          <li>
+            <a href="#a"><i class="fa fa-map-marker"></i> Around Me</a>
+          </li>
+          <li>
+            <a href="#a"><i class="fa fa-shirtsinbulk"></i> Lookbooks</a>
+          </li>
+          <li>
+            <a href="#a"><i class="fa fa-line-chart"></i> Trending</a>
+          </li>
+        </ul>
+        <a href="#a" class="setting"><i class="fa fa-cog"></i></a>
+        <a href="#a" class="mypage" data-cart="8"
+          ><i class="fa fa-archive"></i
+        ></a>
+      </section>
+    </aside>
+    <!-- //aside -->
+
+    <header class="main-header">
+      <div class="header-inner">
+        <i class="fa fa-bars toggle" aria-hidden="true"></i>
+        <h1>Look Book</h1>
+        <i class="fa fa-search search" aria-hidden="true"></i>
+      </div>
+      <form action="#a" method="get">
+        <label for="search">search</label>
+        <input type="text" id="search" />
+        <button type="submit">
+          <i class="fa fa-arrow-circle-right" aria-hidden="true"></i>
+        </button>
+      </form>
+    </header>
+    <!-- //header -->
+    <main>
+      <ul class="latest-products products">
+        <li id="pid-0001">
+          <div class="panel-header">
+            <img
+              src="images/chuck_profile.png"
+              data-at2x="images/chuck_profile@2x.png"
+              alt="profile image"
+            />
+            <div class="titles">
+              <h2>Chuck boots</h2>
+              <h3>in Chris’ <span>Every day</span> book</h3>
+            </div>
+          </div>
+          <div class="panel-content">
+            <p>
+              Hey what do you guys think about these boots? I haven’t owned a
+              pair like them before!
+            </p>
+            <div class="product-picture">
+              <img
+                src="images/no-pic.png"
+                data-at2x="images/no-pic@2x.png"
+                alt="product image"
+              />
+            </div>
+          </div>
+          <div class="panel-footer">
+            <div class="categories">
+              <a href="#a">boots</a>
+              <a href="#a">leather</a>
+            </div>
+            <form action="#a">
+              <input type="checkbox" id="wishlist-pid-0001" />
+              <label for="wishlist-pid-0001">
+                <i class="fa fa-heart-o" aria-hidden="true"></i>
+                <i class="fa fa-heart" aria-hidden="true"></i>
+              </label>
+            </form>
+          </div>
+        </li>
+        <li id="pid-0002">
+          <div class="panel-header">
+            <img
+              src="images/chuck_profile.png"
+              data-at2x="images/chuck_profile@2x.png"
+              alt="profile image"
+            />
+            <div class="titles">
+              <h2>Chuck boots</h2>
+              <h3>in Chris’ <span>Every day</span> book</h3>
+            </div>
+          </div>
+          <div class="panel-content">
+            <p>
+              Hey what do you guys think about these boots? I haven’t owned a
+              pair like them before!
+            </p>
+            <div class="product-picture">
+              <img
+                src="images/no-pic.png"
+                data-at2x="images/no-pic@2x.png"
+                alt="product image"
+              />
+            </div>
+          </div>
+          <div class="panel-footer">
+            <div class="categories">
+              <a href="#a">boots</a>
+              <a href="#a">leather</a>
+            </div>
+            <form action="#a">
+              <input type="checkbox" id="wishlist-pid-0002" />
+              <label for="wishlist-pid-0002">
+                <i class="fa fa-heart-o" aria-hidden="true"></i>
+                <i class="fa fa-heart" aria-hidden="true"></i>
+              </label>
+            </form>
+          </div>
+        </li>
+        <li id="pid-0003">
+          <div class="panel-header">
+            <img
+              src="images/chuck_profile.png"
+              data-at2x="images/chuck_profile@2x.png"
+              alt="profile image"
+            />
+            <div class="titles">
+              <h2>Chuck boots</h2>
+              <h3>in Chris’ <span>Every day</span> book</h3>
+            </div>
+          </div>
+          <div class="panel-content">
+            <p>
+              Hey what do you guys think about these boots? I haven’t owned a
+              pair like them before!
+            </p>
+            <div class="product-picture">
+              <img
+                src="images/no-pic.png"
+                data-at2x="images/no-pic@2x.png"
+                alt="product image"
+              />
+            </div>
+          </div>
+          <div class="panel-footer">
+            <div class="categories">
+              <a href="#a">boots</a>
+              <a href="#a">leather</a>
+            </div>
+            <form action="#a">
+              <input type="checkbox" id="wishlist-pid-0003" />
+              <label for="wishlist-pid-0003">
+                <i class="fa fa-heart-o" aria-hidden="true"></i>
+                <i class="fa fa-heart" aria-hidden="true"></i>
+              </label>
+            </form>
+          </div>
+        </li>
+        <li id="pid-0004">
+          <div class="panel-header">
+            <img
+              src="images/chuck_profile.png"
+              data-at2x="images/chuck_profile@2x.png"
+              alt="profile image"
+            />
+            <div class="titles">
+              <h2>Chuck boots</h2>
+              <h3>in Chris’ <span>Every day</span> book</h3>
+            </div>
+          </div>
+          <div class="panel-content">
+            <p>
+              Hey what do you guys think about these boots? I haven’t owned a
+              pair like them before!
+            </p>
+            <div class="product-picture">
+              <img
+                src="images/no-pic.png"
+                data-at2x="images/no-pic@2x.png"
+                alt="product image"
+              />
+            </div>
+          </div>
+          <div class="panel-footer">
+            <div class="categories">
+              <a href="#a">boots</a>
+              <a href="#a">leather</a>
+            </div>
+            <form action="#a">
+              <input type="checkbox" id="wishlist-pid-0004" />
+              <label for="wishlist-pid-0004">
+                <i class="fa fa-heart-o" aria-hidden="true"></i>
+                <i class="fa fa-heart" aria-hidden="true"></i>
+              </label>
+            </form>
+          </div>
+        </li>
+      </ul>
+    </main>
+    <!-- //main -->
+  </body>
 </html>
-
-
-
-
-
-
-
-
