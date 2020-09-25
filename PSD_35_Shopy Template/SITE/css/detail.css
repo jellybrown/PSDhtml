@@ -27,6 +27,10 @@
     transition: 0.5s;
 }
 
+.product_pictures .thum_img li:hover {
+    cursor: pointer;
+}
+
 .product_pictures .thum_img li img {
     transition: 0.5s;
 }

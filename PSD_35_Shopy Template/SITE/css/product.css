@@ -4,6 +4,10 @@ main {
     padding-top: 80px;
 }
 
+.product_page .new_arrivals_list>li {
+    margin-bottom: 20px;
+}
+
 .filters {
     margin-bottom: 100px;
 }
